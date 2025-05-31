@@ -179,6 +179,7 @@ Precisaremos de 3 pools, um para cada Vlan, eles devem ficar da seguinte forma:
 **Default Gateway**: 192.168.10.1
 **DNS Server**: 192.168.0.2
 **Startp IP Address**: 192.168.10.5
+**TFTP Server**: 192.168.10.1
 
 #### VLAN VENDAS
 
@@ -215,6 +216,7 @@ Router(config-telephony)#max-ephones 3
 Router(config-telephony)#max-dn 3
 Router(config-telephony)#ip source-address 192.168.10.1 port 2000
 Router(config-telephony)#auto assign 1 to 6
+Router(config-telephony)# create cnf-files
 Router(config-telephony)#exit
 ```
 
